@@ -3,7 +3,7 @@ LABEL maintainer "Abiola Ibrahim <abiola89@gmail.com>"
 
 LABEL caddy_version="0.10.3" architecture="amd64"
 
-ARG plugins=http.git
+ARG plugins=http.git,tls.dns.dnspod,http.filemanager,http.filter,http.upload,net,http.cors
 
 RUN apk add --no-cache openssh-client git tar php7-fpm curl
 
